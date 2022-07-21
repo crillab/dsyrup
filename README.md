@@ -1,10 +1,18 @@
-<h1 align="center"> D-Syrup </h1>
+<h1 align="center"> dSyrup </h1>
 
-D-Syrup is an original distributed SAT solver based on the portfolio paradigm. This solver, dedicated to work on plenty of cores, implements a new fully hybrid distributed programming model from Syrup.
+![alt text](dsyrup.png "dsyrup")
+
+dSyrup is an original distributed SAT solver based on the portfolio paradigm. This solver, dedicated to work on plenty of cores, implements a new fully hybrid distributed programming model from Syrup. dSyrup uses a hybrid programming model. In hybrid models, processes running on the same computer communicate via shared memory (pthreads) and messages (MPI) are used only to communicate between computers. By default, dSyrup use the concurrent parallel strategy, but we have also implemented the dynamic Divide and Conquer strategy. 
 
 See http://www.cril.univ-artois.fr/dsyrup/ for more details.
 
-# Install
+People involved in this project:
+- Gilles Audemard (audemard@cril.fr)
+- Jean-Marie Lagniez (lagniez@cril.fr)
+- Nicolas Szczepanski (szczepanski@cril.fr)
+- Sébastien Tabary (tabary@cril.fr)
+
+# Installing D-Syrup
 
 To install the necessary components :
 - Install g++ with c++2011 minimum
@@ -26,7 +34,7 @@ To configure :
   - ...
 - All possibilities for options are described in the file OptionCoding.h. 
 
-# Run
+# Execution
 
 To launch dSyrup in concurent mode on a computer :
 ```console

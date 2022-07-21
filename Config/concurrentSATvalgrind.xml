@@ -1,0 +1,33 @@
+<config>
+  <problem>
+    <type> SAT </type>
+    <sizeAssignment> 1 </sizeAssignment> 
+  </problem>
+  <method type="concurrent"/>
+  <solvers nb="1">
+    <solver>
+      <executable> valgrind </executable>
+      <options>
+        <option> -v </option>
+        <option> Solvers/SAT/GlucoseSyrup/bin/glucose-syrup </option>
+        <option> -nthreads=2 </option>
+        <option> -model </option>
+        <option> -verb=0 </option>
+        <option> -com-how-clause-sharing=2 </option>
+        <option> -com-alea=0 </option>
+        <option> -com-conflicts=100000 </option>
+        <option> -com-sleeping-time-base=100 </option>
+        <option> -com-sleeping-time-sender=1000 </option>
+        <option> -com-sleeping-time-listener=100 </option>
+        <option> -com-sleeping-time-collectif=1000 </option>
+        <option> -lbdSearch=2 </option>
+        <option> -fifosize=600000 </option>
+        <option> BENCHNAME </option>
+      </options>
+      <machine>
+        <npernode> 2 </npernode>
+        <host> localhost </host>
+      </machine>
+    </solver>
+  </solvers>
+</config>

@@ -1,0 +1,10 @@
+to compile: 
+make 
+This will create a executable in bin directory.
+
+to clean: 
+make clean
+
+to run: 
+./glucose-syrup.sh cnf nbthreads
+will run the solver with dedicated options.

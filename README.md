@@ -12,7 +12,11 @@ People involved in this project:
 - Nicolas Szczepanski (szczepanski@cril.fr)
 - Sébastien Tabary (tabary@cril.fr)
 
-# Installing D-Syrup
+
+[SAT 2017](http://www.cril.univ-artois.fr/~szczepanski/res/dsyrup.pdf)
+[JFPC 2018](https://home.mis.u-picardie.fr/~evenement/JFPC2018/articles/JFPC_2018_papier_3.pdf)
+
+# Installing dSyrup
 
 To install the necessary components :
 - Install g++ with c++2011 minimum
